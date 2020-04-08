@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Masteralb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="logo">
+      <img src="img/Logo_main.png" alt="Logo Masteralb" />
+    </header>
+    <main>
+      <!--Register form-->
+      <div class="form-design registerForm">
+        <h2>Register Form</h2>
+        <form>
+          <div class="form">
+            <i class="fas fa-user"></i>
+            <span class="bar"></span>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="form">
+            <i class="fas fa-lock"></i>
+            <span class="bar"></span>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="form">
+            <i class="fas fa-lock"></i>
+            <span class="bar"></span>
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+          <div class="form">
+            <i class="fas fa-envelope"></i>
+            <span class="bar"></span>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="form">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="bar"></span>
+            <select name="city">
+              <option value="Your Location">Your Location</option>
+              <option value="Warszawa">Warszawa</option>
+              <option value="Gdansk">Gdańsk</option>
+              <option value="Wroclaw">Wrocław</option>
+              <option value="Krakow">Kraków</option>
+              <option value="Lublin">Lublin</option>
+            </select>
+          </div>
+          <div class="rule">
+            <label for="reg-rule">
+              <span class="checkbox" id="reg-rule">
+                <span class="tick" data-option="reg-rule"></span>
+              </span>
+              I have read and accept the terms of use</label
+            >
+          </div>
+          <button>Sign up</button>
+        </form>
+      </div>
+      <!--Send Email Form-->
+      <div class="form-design sendEmailForm">
+        <h2>Send Form</h2>
+        <form>
+          <div class="form">
+            <i class="fas fa-user"></i>
+            <span class="bar"></span>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="form">
+            <i class="fas fa-envelope"></i>
+            <span class="bar"></span>
+            <input type="email" placeholder="Email" />
+          </div>
+          <textarea placeholder="Type your message"></textarea>
+          <div class="rule">
+            <label for="send-rule">
+              <span class="checkbox" id="send-rule">
+                <span class="tick" data-option="send-rule"></span>
+              </span>
+              I have read and accept the terms of use</label
+            >
+          </div>
+          <button>Sign up</button>
+        </form>
+      </div>
+      <!--Sign In Form-->
+      <div class="form-design signInForm">
+        <h2>Sign In Form</h2>
+        <form>
+          <div class="form">
+            <i class="fas fa-user"></i>
+            <span class="bar"></span>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="form">
+            <i class="fas fa-lock"></i>
+            <span class="bar"></span>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div>
+            <div class="rule">
+              <label for="signIn-rule">
+                <span class="checkbox" id="signIn-rule">
+                  <span class="tick" data-option="signIn-rule"></span>
+                </span>
+                I have read and accept the terms of use</label
+              >
+            </div>
+            <button>Sign in</button>
+          </div>
+        </form>
+      </div>
+      <!--Recover Form-->
+      <div class="form-design recoverForm">
+        <h2>Recover Form</h2>
+        <form>
+          <div class="form">
+            <i class="fas fa-envelope"></i>
+            <span class="bar"></span>
+            <input type="email" placeholder="Enter your Email" />
+          </div>
+          <div class="form">
+            <i class="fas fa-mobile-alt"></i>
+            <span class="bar"></span>
+            <input type="tel" placeholder="Enter your Phone number" />
+          </div>
+          <div class="buttons">
+            <button>Send</button>
+            <button>Done</button>
+          </div>
+        </form>
+      </div>
+      <!--Subscribe Form-->
+      <div class="form-design subscribeForm">
+        <h2>Subscribe Form</h2>
+        <form>
+          <div class="form">
+            <i class="fas fa-envelope"></i>
+            <span class="bar"></span>
+            <input type="email" placeholder="Enter your Email" />
+          </div>
+          <div class="buttons">
+            <button>Subscribe</button>
+            <button class="nosubscribe">No, thanks</button>
+          </div>
+        </form>
+      </div>
+      <div class="logo logoFooter">
+        <img src="img/Logo_footer.png" alt="Logo Masteralb" class="logo" />
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

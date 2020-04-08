@@ -1,0 +1,101 @@
+/*Responsive*/
+
+@media all and (max-width:992px) {
+
+    main {
+        max-height: none;
+    }
+
+    .form-design {
+        width: 600px;
+    }
+
+    .registerForm {
+        order: 1;
+    }
+
+    .signInForm {
+        order: 2;
+    }
+
+    .recoverForm {
+        order: 3;
+    }
+
+    .subscribeForm {
+        order: 4;
+    }
+
+    .sendEmailForm {
+        order: 5;
+        margin-bottom: 0px;
+    }
+
+    .logoFooter {
+        order: 6;
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width:768px) {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .form-design {
+        width: 90vw;
+    }
+
+    form {
+        box-shadow: none;
+    }
+}
+
+
+@media all and (max-width:480px) {
+    .logo {
+        transform: scale(0.8);
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+
+    .form-design {
+        width: 100vw;
+    }
+
+    .fas,
+    .bar {
+        display: none;
+    }
+
+    .recoverForm button,
+    .subscribeForm button {
+        transform: scale(0.7);
+    }
+}
+
+@media all and (max-width:250px) {
+
+    input,
+    textarea,
+    select {
+        font-size: 60%;
+        line-height: 60%;
+    }
+
+    button {
+        transform: scale(0.7);
+    }
+
+    .recoverForm button,
+    .subscribeForm button {
+        font-size: 0.65em;
+    }
+}
