@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>To Do App</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header__slogan">Tasklist</h1>
+      <h2 class="header__motto">Start making progress</h2>
+    </header>
+    <form class="form">
+      <input type="text" class="form__input form__input--new-task" placeholder="What We Will Do Today" />
+      <input type="submit" class="form__input form__input--submit" value="Add to List" />
+    </form>
+    <form class="form">
+      <input type="text" id="search-tasks" class="form__input" placeholder="Search task" />
+    </form>
+    <h3 id="message"></h3>
+    <div class="boards">
+      <div id="list-tasks" class="list">
+        <h3 class="list-tasks__header">Tasks to be done</h3>
+      </div>
+      <div id="done-tasks" class="list">
+        <h3 class="done-tasks__header">Completed tasks</h3>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
