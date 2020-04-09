@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+#wrapper {
+
+    width: 1000px;
+    border: 1px solid rgb(46, 46, 46);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.download {
+    bottom: 40px;
+    right: 50px;
+    position: fixed;
+    display: inline-block;
+    background-color: rgb(46, 46, 46);
+    transition: all 0.3s ease-in;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+.download:hover {
+    background-color: rgb(4, 125, 217);
+}
+
+main {
+    display: flex;
+    color: #fff;
+}
+
+.headers {
+    display: inline-block;
+    width: 330px;
+    text-transform: uppercase;
+    background-color: rgb(4, 125, 217);
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.cv-text {
+    font-size: 18px;
+}
+
+/*Styling Contact*/
+
+.contact {
+    width: 350px;
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    padding-left: 15px;
+
+}
+
+.contact h2 {
+    font-size: 35px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.contact .photo {
+    height: 200px;
+    width: 200px;
+    border: 7px solid rgb(4, 125, 217);
+    border-radius: 50%;
+    background-image: url(../img/TL_photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.contact-content #technologies,
+.contact-content #programs {
+    padding-left: 30px;
+}
+
+.address > .contact-content > div > .social-media {
+    padding: 10px;
+}
+
+.address > .contact-content > div > .social-media > a {
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.address > .contact-content > div > .social-media > a > i {
+    font-size: 30px;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.address > .contact-content > div > .social-media > a:last-child {
+    padding-right: 0px;
+}
+
+.address > .contact-content > div > .social-media > a > i.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.address > .contact-content > div > .social-media > a > i.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.address > .contact-content > div > .social-media > a > i.fa-github:hover {
+    color: #bd2c00;
+}
+
+.address #programming-accounts > li {
+    list-style-type: none;
+}
+
+.address #programming-accounts > li > a[target="_blank"]:link,
+.address #programming-accounts > li > a[target="_blank"]:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-content #technologies {
+    list-style-image: url(../img/checked.png);
+}
+
+#technologies li{
+padding-bottom:10px;
+}
+
+.contact-content #programs {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 0px;
+}
+
+.contact-content #programs li {
+    line-height: 1.5em;
+    display: inherit;
+}
+
+.contact-content #programs li::after {
+    content: "  |  ";
+}
+
+.contact-content #programs li:last-child::after {
+    content: "";
+}
+
+
+/*Styling text-area*/
+
+.text-area {
+    height: 100%;
+    width: 650px;
+    color: rgb(46, 46, 46);
+    padding: 10px;
+}
+
+.text-area h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+.area-content {
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.area-headers {
+    width: 630px;
+    margin-top: 0px;
+
+}
+
+.careerStages {
+    margin-bottom: 20px;
+}
+
+.area-content .company {
+    font-weight: 800;
+}
+
+.careerStages ul {
+    margin-left: 30px;
+}
+
+.others ul {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+/*Styling footer*/
+
+footer p {
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*Media-queries < 1000px*/
+
+@media (max-width:1000px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact {
+        width: 100%;
+    }
+    .address > .contact-content > div > .social-media > a > i.fa-github {
+        margin-right: 20px;
+    }
+
+    .cv-text {
+        margin-right: 20px;
+    }
+
+    .resp-contact {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .headers {
+        width: 100%;
+    }
+
+    #technologies {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact-content #programs {
+        padding-left: 30px;
+    }
+
+     #technologies > li{
+        padding-bottom:20px;
+    }
+
+    #technologies > li,
+    #programs > li {
+        padding-right: 30px;
+    }
+
+    .contact-content #programs li {
+        display: list-item;
+    }
+
+    .contact-content #programs li::after {
+        content: none;
+    }
+    .contact-content #programs {
+        list-style-image: url(../img/checked.png);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact-content #programs li:last-child::after {
+        content: none;
+    }
+
+
+    .text-area {
+        width: 100%;
+    }
+
+    .text-area > h1 {
+        display: none;
+    }
+
+
+    footer p {
+        padding: 0px;
+        text-align: left;
+        font-weight: 400;
+    }
+
+}
+
+/*Media-queries < 768px */
+
+@media (max-width:768px) {
+    #wrapper {
+        padding: 0px;
+    }
+    .headers {
+        margin-left: 0px;
+    }
+
+    .contact {
+        padding: 10px;
+
+    }
+}
