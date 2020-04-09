@@ -1,0 +1,38 @@
+#root{
+    background-color: darkgrey;
+    height: 100vh
+}
+
+.red{
+  color:red;
+}
+.orange{
+  color:orange;
+}
+.yellow{
+  color:yellow;
+}
+.green{
+  color:green;
+}
+.darkred{
+  color:darkred;
+}
+
+
+
+.red-bg{
+  background-color:red;
+}
+.orange-bg{
+  background-color:orange;
+}
+.yellow-bg{
+  background-color:yellow;
+}
+.green-bg{
+  background-color:green;
+}
+.darkred-bg{
+  background-color:darkred;
+}
