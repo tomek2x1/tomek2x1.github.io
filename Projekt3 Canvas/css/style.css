@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(104, 188, 235);
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 35px;
+  width: 250px;
+}
+
+.settings {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.settings input {
+  width: 100px;
+  height:25px;
+  margin: 0 5px;
+  font-weight: 500;
+  font-size: 18px;
+  outline: 0;
+    border: 0;
+}
+
+.settings button{
+  color:white;
+  background-color: rgb(56,115,245);
+  border: 0;
+  padding:5px 10px;
+  font-size:20px;
+}
+
+.settings button:first-child{
+margin-right: 5px;
+}
+
+/* Canvas  */
+/* #canvas{
+  width:2000px;
+  height:1000px;
+  background-color: blue;
+} */

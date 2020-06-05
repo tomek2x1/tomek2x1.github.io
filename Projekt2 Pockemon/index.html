@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        <span class="header__title--primary">Pokemon </span>catalog
+      </h1>
+      <input
+        type="text"
+        id="search"
+        class="header__search"
+        placeholder="Search"
+      />
+    </header>
+    <section id="board" class="board"></section>
+    <footer class="footer">
+      <button id="button" class="footer__button">Load More</button>
+      <div id="dots" class="dots hide">
+        <div class="dot dot--one"></div>
+        <div class="dot dot--two"></div>
+        <div class="dot dot--three"></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
